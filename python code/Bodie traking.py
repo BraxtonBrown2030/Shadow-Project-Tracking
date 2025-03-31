@@ -1,36 +1,36 @@
-﻿from cvzone.HandTrackingModule import HandDetector # Hand tracking module
-import cv2 # for camera and image tracking
-import socket # for Data transfer to unity
+﻿import cv2
+from cvzone.PoseModule import PoseDetector
+import socket
 
-# open cv and media pipe are part of the cvzone library you will need to install it and media pipe to run this code
+# Initialize webcam
+cap = cv2.VideoCapture(0)
+cap.set(3, 1280)  # Width
+cap.set(4, 720)   # Height
 
-cap = cv2.VideoCapture(0) # get the default camera (laptops default are the inbuilt Camera so change the camera number if you are using an external camera)
-cap.set(3, 1280) # Width
-cap.set(4, 720) # Height
-success, img = cap.read() # detecting the camera and continue to read the camera if a camera is present
-h, w, _ = img.shape # get the height and width of the image
-detector = HandDetector(detectionCon=0.8, maxHands=2) # Hand Detector number of hand and detection confidence
+# Initialize Pose Detector
+detector = PoseDetector()
 
-sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) # Socket for sending data to unity and socket type
-serverAddressPort = ("127.0.0.1", 5052) # IP address and port number for sending data to unity
+socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+serverAddressPort = ("127.0.0.1", 5052) 
 
 while True:
-    # Get image frame
     success, img = cap.read()
-    # Find the hand and its landmarks
-    hands, img = detector.findHands(img)  # with draw
-    # hands = detector.findHands(img, draw=False)  # without draw
-    data = []
+    if not success:
+        break
 
-    if hands:
-        # Hand 1
-        hand = hands[0]
-        lmList = hand["lmList"]  # List of 21 Landmark points per hand
-        for lm in lmList:
-            data.extend([lm[0], h - lm[1], lm[2]])
+    # Find the pose and draw landmarks
+    img = detector.findPose(img)
+    lmList, bboxInfo = detector.findPosition(img, bboxWithHands=True)
 
-        sock.sendto(str.encode(str(data)), serverAddressPort) # encoding data before sending it to unity
+    if lmList:
+        # Example: Get the coordinates of the nose (landmark 0)
+        nose = lmList[0]
+        print(f"Nose coordinates: {nose}")
 
-    # Display
+    # Display the image
     cv2.imshow("Image", img)
-    cv2.waitKey(1)
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+
+cap.release()
+cv2.destroyAllWindows()
