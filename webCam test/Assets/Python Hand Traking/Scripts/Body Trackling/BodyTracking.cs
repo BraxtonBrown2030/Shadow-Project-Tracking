@@ -20,9 +20,13 @@ public class BodyTracking : MonoBehaviour
         }
 
         // Parse the first landmark position
-        float x = float.Parse(points[0]) / 100;
+        // x-xis is minused by 7 because it offenses the position of the body by 7 when transferred
+        float x = 7 - float.Parse(points[0]) / 100;
         float y = float.Parse(points[1]) / 100;
 
+        // try to get rid of the 100 then try to flip the y-axis
+        
+        
         // Update the position of the single GameObject
         bodyPoint.transform.localPosition = new Vector3(x, y, bodyPoint.transform.localPosition.z);
     }
