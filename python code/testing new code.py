@@ -32,7 +32,10 @@ while True:
         y_avg = sum(point[1] for point in points) / len(points)
         middle_point = (int(x_avg), int(y_avg))
 
-        
+        # Invert the y-axis for unity coordinates because the origin is at the bottom left not top left
+        height = img.shape[0]
+        y_inverted = height - middle_point[1]
+        middle_point = (middle_point[0], y_inverted)
 
         # Draw the middle point on the image
         cv2.circle(img, middle_point, 5, (0, 255, 0), cv2.FILLED)
