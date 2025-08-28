@@ -1,0 +1,33 @@
+using UnityEngine;
+using TMPro;
+
+public class ScriptObjectUpdate : MonoBehaviour
+{
+    [Tooltip("Reference to the ScriptableObject that holds the integer value for Max Hands tracked")]
+    public scriptibleIntObject intObject; // Reference to the ScriptableObject
+    [Tooltip("Reference to the InputField in the menu that will update the ScriptableObject value")]
+    public TMP_InputField inputField; // Reference to the InputField
+
+    void Start()
+    {
+        // Initialize the InputField with the value from the ScriptableObject
+        inputField.text = intObject.value.ToString();
+
+        // Add a listener to update the ScriptableObject when the InputField value changes
+        inputField.onEndEdit.AddListener(UpdateScriptableObject);
+    }
+
+    void UpdateScriptableObject(string input)
+    {
+        // Parse the input and update the ScriptableObject value
+        if (int.TryParse(input, out int newValue))
+        {
+            intObject.SetValue(newValue);
+            Debug.Log("ScriptableObject value updated to: " + newValue);
+        }
+        else
+        {
+            Debug.LogWarning("Invalid input. Please enter a valid number.");
+        }
+    }
+}

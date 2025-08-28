@@ -19,14 +19,14 @@ public class UDPReceive : MonoBehaviour
     [Tooltip("This will show all incoming data from python.")] 
     public string data;
 
-    [TextArea(3, 10)] public string UDP_Hands_notes =
+    
+[TextArea(3, 10)] public string UDP_Hands_notes =
         "This script will receive data from a python script that is sending data over UDP. " +
         "The data will be received on the port that is set in the port variable. " +
         "The data will be stored in the data variable. " +
         "The data can be printed to the console by setting the printToConsole variable to true. " +
         "The startRecieving variable can be set to false to stop receiving data. " +
         "The data can be accessed by other scripts by using the data variable ";
-
     [TextArea(3, 10)] public string note =
         "The default camera can only be changed in the python hand tracking script.";
     

@@ -1,0 +1,532 @@
+fileFormatVersion: 2
+guid: 04e4493ca51938c4ea32cdc213bd75d9
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BeamsMat
+    second: {fileID: 2100000, guid: ffe389d7911cfb84aad540b9890e52fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BoxMat
+    second: {fileID: 2100000, guid: 366baf64e02e8c247b7575a2ffcd48bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ChestMat
+    second: {fileID: 2100000, guid: 2c8a1449d0e10ae429bb86ae4f09fcec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CupboardBackMat
+    second: {fileID: 2100000, guid: bcfd82953ef09d84d9979d4dd9f13ab2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CupboardDoorMat
+    second: {fileID: 2100000, guid: 9112b10c1e5d4c448aa9b8326ede0291, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FloorMat
+    second: {fileID: 2100000, guid: d0746925fc024154c8fa2ad29dae98ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LowWallMat
+    second: {fileID: 2100000, guid: 9b7953792109b4a4c9d9fd5cbd205a7a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ShelfMat
+    second: {fileID: 2100000, guid: 8b3cd8b8d2882fc41bee8449ae22493d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StoolMat
+    second: {fileID: 2100000, guid: 0f3e0e30549a4ae43bd6594a23af8614, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TableMat
+    second: {fileID: 2100000, guid: 282d71f041d46e8468907406897bc03a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: UpperWallMat
+    second: {fileID: 2100000, guid: eba14da69b90fe447b5bfd4bb8411658, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallShelfMat
+    second: {fileID: 2100000, guid: 512a1ef7ace0954448a671a896ddd003, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WindowMat
+    second: {fileID: 2100000, guid: b038ffba54d63cd408355e47da774349, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WindowPaneMat
+    second: {fileID: 2100000, guid: 0c0d7ddf4be64ec49bf86f793531adaa, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_BeamsMatSG_Emissive
+    second: {fileID: 2800000, guid: 23f4dd44b827700459dd10c7d30c33e6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_BeamsMatSG_Height
+    second: {fileID: 2800000, guid: 71b245f3898cce34c941628009f1ee53, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_BeamsMatSG_Metallic
+    second: {fileID: 2800000, guid: c2e010e7657a4b141ae0bb5728dafcd0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_BeamsMatSG_Normal
+    second: {fileID: 2800000, guid: 475400e07ce933b468cb5bbddcb4dc7d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_BeamsMatSG_Roughness
+    second: {fileID: 2800000, guid: 09bf661c4c9de514b970b2a7d4fb414e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_BoxMatSG_Emissive
+    second: {fileID: 2800000, guid: ec0cee95ffd4b894eb0c1bf831856c0d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_BoxMatSG_Height
+    second: {fileID: 2800000, guid: 18d795979f615be4fa8a3ba05c76dd92, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_BoxMatSG_Metallic
+    second: {fileID: 2800000, guid: b08dad68f1feed64a864c83a20684762, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_BoxMatSG_Normal
+    second: {fileID: 2800000, guid: c2c671b23dfd718468fb6a8a4a69d084, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_BoxMatSG_Roughness
+    second: {fileID: 2800000, guid: a462b6a18053a0a43ac3fefd386c6d75, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_ChestMatSG_Emissive
+    second: {fileID: 2800000, guid: cd876b805d3443640941ece31d8fab38, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_ChestMatSG_Height
+    second: {fileID: 2800000, guid: 22cde376b4897a54588377593d0a8da5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_ChestMatSG_Metallic
+    second: {fileID: 2800000, guid: 0d63102c2b1124b44aa8ea04560c0875, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_ChestMatSG_Normal
+    second: {fileID: 2800000, guid: 0b5984e03decae14886f28112531cc34, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_ChestMatSG_Roughness
+    second: {fileID: 2800000, guid: eeb31aa43bb631346bc39590e8404ce4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_CupboardBackMatSG_Emissive
+    second: {fileID: 2800000, guid: a8f19682df0b2a04b9606d535ed52d8a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_CupboardBackMatSG_Height
+    second: {fileID: 2800000, guid: 5edab3c32d7a6b54e8f68e905d0334f9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_CupboardBackMatSG_Metallic
+    second: {fileID: 2800000, guid: de88cf36eb0776d44b6835b54d9dc0af, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_CupboardBackMatSG_Normal
+    second: {fileID: 2800000, guid: 7e903f919e8653d43ae88efb0a1d1f40, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_CupboardBackMatSG_Roughness
+    second: {fileID: 2800000, guid: 0cd358d057fa55e43b75075ed587b8db, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_CupboardDoorMatSG_Emissive
+    second: {fileID: 2800000, guid: 1c720cec67ebfb144b746071b185ffba, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_CupboardDoorMatSG_Height
+    second: {fileID: 2800000, guid: 4d392c4e4ded70945b8c162604647889, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_CupboardDoorMatSG_Metallic
+    second: {fileID: 2800000, guid: 427d55d39f7e8f844b6a4dd819549655, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_CupboardDoorMatSG_Normal
+    second: {fileID: 2800000, guid: 9eff6d5fa03a84a429395512bad4758a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_CupboardDoorMatSG_Roughness
+    second: {fileID: 2800000, guid: aaaab5a3336f60640944de1ccb83ce10, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_FloorMatSG_Emissive
+    second: {fileID: 2800000, guid: 93ecb669bea71ed4a8855b5e7cdc848c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_FloorMatSG_Height
+    second: {fileID: 2800000, guid: 2f00d0c6d7bf75849a14028d9af982da, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_FloorMatSG_Metallic
+    second: {fileID: 2800000, guid: 690562ff9e0b03e4bb144561245fe991, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_FloorMatSG_Normal
+    second: {fileID: 2800000, guid: de8a9756c7e9c354d9fbb33e143eaccc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_FloorMatSG_Roughness
+    second: {fileID: 2800000, guid: ca9cdbdd86efe6e47a95e68189df9b18, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_LowWallMatSG_Emissive
+    second: {fileID: 2800000, guid: 293eacf1ef16dda4f831abf6ac8bf5a6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_LowWallMatSG_Height
+    second: {fileID: 2800000, guid: ca0a40f8636f173468e21b8fdf2e6543, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_LowWallMatSG_Metallic
+    second: {fileID: 2800000, guid: 7d3b7324c62302f4c903f6125ccd80f1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_LowWallMatSG_Normal
+    second: {fileID: 2800000, guid: 657d682f7da25dc438ecd1d44d0380bc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_LowWallMatSG_Roughness
+    second: {fileID: 2800000, guid: 2a12369dc02168a4985c61088e9a76a4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_ShelfMatSG_Emissive
+    second: {fileID: 2800000, guid: 14b5e00af16d5914abb44c137950fe8d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_ShelfMatSG_Height
+    second: {fileID: 2800000, guid: e6b56644f7a5f174bbac01ec9a0ed916, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_ShelfMatSG_Metallic
+    second: {fileID: 2800000, guid: 0e74a9d8fe86dff49ba41721c5b0c21b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_ShelfMatSG_Normal
+    second: {fileID: 2800000, guid: 88a961d26ad6f2547953d6c39709af23, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_ShelfMatSG_Roughness
+    second: {fileID: 2800000, guid: 9aa79511b023897459ca744cc6f6111e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_StoolMatSG_Emissive
+    second: {fileID: 2800000, guid: 8ead96dbf0cb5ed4fae425446ba08f7c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_StoolMatSG_Height
+    second: {fileID: 2800000, guid: 3fdada7e266aa534e82b4d3180a62ec5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_StoolMatSG_Metallic
+    second: {fileID: 2800000, guid: 18e92041d065b85438943a99a2f90627, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_StoolMatSG_Normal
+    second: {fileID: 2800000, guid: c0d40e41fc6f8cb4ba39fe0779a70753, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_StoolMatSG_Roughness
+    second: {fileID: 2800000, guid: 2ad1d481b4fe6d243ba6b35338091475, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_TableMatSG_Emissive
+    second: {fileID: 2800000, guid: f3a5ab5d0e424a44b93ee8537d8d5399, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_TableMatSG_Height
+    second: {fileID: 2800000, guid: 842d52ba02902684b94dba7382cb7fe7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_TableMatSG_Metallic
+    second: {fileID: 2800000, guid: b8c3c6c0009c24547b7f6072dff24901, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_TableMatSG_Normal
+    second: {fileID: 2800000, guid: fcec4d05535847345a8a977bcb5b20bf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_TableMatSG_Roughness
+    second: {fileID: 2800000, guid: ccde959aa34ee8d419e47c93825d62a1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_UpperWallMatSG_Emissive
+    second: {fileID: 2800000, guid: f94f9fed856415c4683cc9558303f2e1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_UpperWallMatSG_Height
+    second: {fileID: 2800000, guid: 61a3790c5e7a17a4ba2bbadc1cbc68cb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_UpperWallMatSG_Metallic
+    second: {fileID: 2800000, guid: d19a623db49d9a44da11221152fae507, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_UpperWallMatSG_Normal
+    second: {fileID: 2800000, guid: 5ed10e88d2a7e6548b85d8d712654c89, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_UpperWallMatSG_Roughness
+    second: {fileID: 2800000, guid: 00d4f5c694efccf43a9c76a118fd1132, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_WallShelfMatSG_Emissive
+    second: {fileID: 2800000, guid: 5463a184fa30d6a4fa33a45e0f0cf668, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_WallShelfMatSG_Height
+    second: {fileID: 2800000, guid: 6aef694c74848c443bc92b525e94cfc4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_WallShelfMatSG_Metallic
+    second: {fileID: 2800000, guid: df0f411fe31d49c44bcba623d3e5104f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_WallShelfMatSG_Normal
+    second: {fileID: 2800000, guid: 65c4b727303cf7649a3d94ac7b333515, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_WallShelfMatSG_Roughness
+    second: {fileID: 2800000, guid: 57db774a89faeb54e8cdd6e5cbcd3d6c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_WindowMatSG_Emissive
+    second: {fileID: 2800000, guid: 9827cbe99daa8c246a062bdbe94995cd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_WindowMatSG_Height
+    second: {fileID: 2800000, guid: 4c6422c8927e9ed4bba5848861e3786a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_WindowMatSG_Metallic
+    second: {fileID: 2800000, guid: 8886786a9864e284faedeb270406b251, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_WindowMatSG_Normal
+    second: {fileID: 2800000, guid: dbd24b3ee77e3a4408bad7da799a2c6b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_WindowMatSG_Roughness
+    second: {fileID: 2800000, guid: 242f0675f8e3a27499b9aeeb351ec865, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_WindowPaneMatSG_Emissive
+    second: {fileID: 2800000, guid: 7e1ce087d783e65438dc442b848bd150, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_WindowPaneMatSG_Height
+    second: {fileID: 2800000, guid: 30ed3b2a5b2d1f24e8f995976d80557b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_WindowPaneMatSG_Metallic
+    second: {fileID: 2800000, guid: bee700551b26da245b2eaeddc9571227, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_WindowPaneMatSG_Normal
+    second: {fileID: 2800000, guid: 710fc6e97b60c0944853dfc7f0b64bac, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_WindowPaneMatSG_Opacity
+    second: {fileID: 2800000, guid: fd901d17474e9494cb7727acacf2d264, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Attic_WindowPaneMatSG_Roughness
+    second: {fileID: 2800000, guid: b8f7350ec4508424d83e8b5819fdd6ff, type: 3}
+  materials:
+    materialImportMode: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 0
+    importPhysicalCameras: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 1
+    weldVertices: 1
+    bakeAxisConversion: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 1
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
