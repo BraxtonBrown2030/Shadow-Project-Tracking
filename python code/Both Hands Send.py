@@ -7,6 +7,9 @@ cap = cv2.VideoCapture(0) # Open the default camera
 cap.set(3, 1280)  # Set the width of the camera frame
 cap.set(4, 720)  # Set the height of the camera frame
 
+# 4k resolution (3840 x 2160)
+# normal resolution (1280 x 720)
+
 # Initialize Hand Detector with detection confidence of 0.8 and maximum of 2 hands
 detector = HandDetector(detectionCon=0.8, maxHands=2)
 
